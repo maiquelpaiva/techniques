@@ -8,9 +8,9 @@ function selfDestruct() {
     console.log('Self-destructing...!');
     fs.unlink(scriptPath, (err) => {
         if (err) {
-            console.error('Something went wrong to kill the script', err);
+            console.error('Something went wrong to kill the script >:(', err);
         } else {
-            console.log('The script is dead');
+            console.log('The script is dead!');
         }
     });
 }
