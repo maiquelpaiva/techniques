@@ -9,7 +9,6 @@
 void antiDebug() {
     long ptrace_ret;
 
-    // direct syscall to hide ptrace
     ptrace_ret = syscall(SYS_ptrace, PTRACE_TRACEME, 0, NULL, 0);
 
     if (ptrace_ret == -1) {
